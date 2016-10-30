@@ -1,0 +1,74 @@
+body {
+  background: rgb(234, 241, 217);
+}
+
+.container {
+  width: 800px;
+  height: 800px;
+  margin: 100px auto 0;
+}
+
+.dial-slider__container {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid red;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.dial-slide__thumb {
+  position: absolute;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  transition: .6s all;
+  overflow: hidden;
+  background: #fff;
+}
+.dial-slide__prev .dial-slide__thumb {
+  background: red;
+}
+.dial-slide__next .dial-slide__thumb {
+  background: green;
+}
+.dial-slide__inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  transition: .6s all;
+}
+.dial-slide__content {
+  display: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.dial-slide__active .dial-slide__content {
+  display: block;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
